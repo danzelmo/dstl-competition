@@ -1,9 +1,9 @@
-###Code related to kaggle competition [dstl satallite imagery feature detection](https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection)
+### Code related to kaggle competition [dstl satallite imagery feature detection](https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection)
 
 This repo includes image processing code and networks based on dilated convolution I used for the dstl competition. The included
 tiny network has a intersection over union score of 0.391 on public leaderboard and 0.358 on private leaderboard. It is trained only on the M images, which were all rescaled to 835x835 to facilitate comparison with higher resolution versions of the net. Code provided on the forums for making binary masks and converting binary mask to polygon was used, with the modification that binary masks were upscaled 4x on width and height before converting to polygon. 
 
-###Overview of included code
+### Overview of included code
 The notebooks `top_level_view.ipynb` looks at all the images in the dataset, and discusses a few minor points on how to increase score(namely ignoring certain classes for many grids to reduce false positives)
 
  To run change `DATA_DIR` in global\_vars.py to your top level directory. This directory should have the folders `sixteen_band` and `three_band` along with train\_wkt\_v4.csv, grid\_sizes.csv and sample\_submission.csv. It should have sub-directories, `labels`, `weights`, `bin_masks`, and `submissions` made before trying to run the notebooks. 
