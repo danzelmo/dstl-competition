@@ -12,7 +12,7 @@ The notebooks `top_level_view.ipynb` looks at all the images in the dataset, and
  * dilated\_nets.py has the neural network definitions
 
 
-### network archetecture
+### Network archetecture
 
 Network archetecture is an inverted pyrmid. Padding is not used, so images decrease with size as moving through the network. Output size is fixed and each path uses different parts of the image. Dilated convolution is used early in the network to decrease the size of the images but to retain larger receptive field for the output neurons. Different paths are combined later in the network. Dropout is used at final layers for added regularization as no max pooling is used. All Conv2D layers are actually `conv->batchnorm->relu` but the extra layers are suppressed to make viewing slightly easier.
 
