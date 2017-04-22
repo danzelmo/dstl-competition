@@ -19,7 +19,7 @@ def shw(im, y=6.0, x=6.0):
     plt.imshow(im)
     plt.show()
 
-# make paths relative etc
+
 def load_train_names():
     train_labels = pd.read_csv(os.path.join(global_vars.DATA_DIR,'train_wkt_v4.csv'), index_col=0)
     return list(train_labels.index.unique())
