@@ -1,0 +1,1 @@
+DATA_DIR = '/media/d/ssd2/dstl/'
