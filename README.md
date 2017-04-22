@@ -1,6 +1,6 @@
 ### Code related to kaggle competition [dstl satallite imagery feature detection](https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection)
 
-This repo includes image processing code and networks based on dilated convolution I used for the dstl competition. The included
+This repository includes image processing code and networks based on dilated convolution I used for the dstl competition. The included
 tiny network has a intersection over union score of 0.391 on public leaderboard and 0.358 on private leaderboard. It is trained only on the M images, which were all rescaled to 835x835 to facilitate comparison with higher resolution versions of the net. Code provided on the forums for making binary masks and converting binary mask to polygon was used, with the modification that binary masks were upscaled 4x on width and height before converting to polygon. 
 
 ### Overview of included code
